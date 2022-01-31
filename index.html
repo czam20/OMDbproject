@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <!-- <div class="container" id="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <button class="btn-1" id="btn-1">column</button>
+    <button class="btn-color" id="btn-2">color</button>
+    <script src="main.js"></script> -->
+    <!-- <button class="numbers" id="btn-pair">pair</button>
+        <button class="numbers" id="btn-odd">odd</button> -->
+    <section class="search">
+        <div class="search-form">
+            <div class="search-container">
+                <label for="input-search" class="search__label">Search a Movie by the Title:</label>
+                <input type="text" id="input-search">
+            </div>
+            <button class="btn search__btn" id="btn-search" type="submit">Search</button>
+        </div>
+    </section>
+
+    <section class="movies-result">
+        <div class="movies-container" id="movies-container"></div>
+    </section>
+
+    <section class="modal" id="modal">
+        <div class="movie-details__container" id="movie-details-container">
+            <button class="btn modal__btn" id="close-btn">Close</button>
+            <div class="left">
+                <h3 class="movie__title" id="title"></h3>
+                <span class="movie__year" id="year"></span>
+                <span class="movie__director" id="director">Directed by:</span>
+                <img class="movie__image img" id="poster">
+                <p class="movie__description" id="description"></p>
+            </div>
+            <div class="right">
+                <ul class="movie-details__list">
+                    <span>More Details</span>
+                    <li class="movie-details__item"><span>Production: </span><span id="production"></span></li>
+                    <li class="movie-details__item"><span>Writers: </span><span id="writer"></span></li>
+                    <li class="movie-details__item"><span>Actors: </span><span id="actors"></span></li>
+                    <li class="movie-details__item"><span>Awards: </span><span id="awards"></span></li>
+                    <li class="movie-details__item"><span>Rated: </span><span id="rated"></span></li>
+                    <li class="movie-details__item"><span>Country:  </span><span id="country"></span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
