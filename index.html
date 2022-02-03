@@ -8,28 +8,39 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
-    <!-- <div class="container" id="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
-
-    <button class="btn-1" id="btn-1">column</button>
-    <button class="btn-color" id="btn-2">color</button>
-    <script src="main.js"></script> -->
-    <!-- <button class="numbers" id="btn-pair">pair</button>
-        <button class="numbers" id="btn-odd">odd</button> -->
-    <section class="search">
-        <div class="search-form">
-            <div class="search-container">
-                <label for="input-search" class="search__label">Search a Movie by the Title:</label>
-                <input type="text" id="input-search">
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <h2>OMDB</h2>
             </div>
-            <button class="btn search__btn" id="btn-search" type="submit">Search</button>
+            <ul class="list nabvar__menu" id="menu">
+                <li class="nabvar__menu-item" id="home">Home</li>
+                <li class="nabvar__menu-item" id="login">Login</li>
+            </ul>
+        </nav>
+        <div class="modal login" id="login-modal">
+            <button class="btn modal__btn" id="close-login">Close</button>
+            <form class="login__form" id="login-form">
+                <label for="username">Username</label>
+                <input type="text" name="username" class="input" id="username">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="input" id="password">
+                <button type="button" class="btn login__form-btn" id="login-btn">Login</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="search" id="search-section">
+        <div class="search-form" id="search-form">
+            <form class="search-container">
+                <label for="input-search" class="search__label">Search a Movie by the Title:</label>
+                <input type="text" class="input" id="input-search">
+            </form>
+            <button class="btn search__btn" id="btn-search" type="button">Search</button>
         </div>
     </section>
 
@@ -37,9 +48,9 @@
         <div class="movies-container" id="movies-container"></div>
     </section>
 
-    <section class="modal" id="modal">
+    <section class="modal" id="movie-details-modal">
         <div class="movie-details__container" id="movie-details-container">
-            <button class="btn modal__btn" id="close-btn">Close</button>
+            <button class="btn modal__btn" id="close-details">Close</button>
             <div class="left">
                 <h3 class="movie__title" id="title"></h3>
                 <span class="movie__year" id="year"></span>
@@ -48,7 +59,7 @@
                 <p class="movie__description" id="description"></p>
             </div>
             <div class="right">
-                <ul class="movie-details__list">
+                <ul class="movie-details__list list">
                     <span>More Details</span>
                     <li class="movie-details__item"><span>Production: </span><span id="production"></span></li>
                     <li class="movie-details__item"><span>Writers: </span><span id="writer"></span></li>
