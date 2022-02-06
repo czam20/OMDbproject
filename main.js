@@ -5,7 +5,9 @@ const API = 'https://www.omdbapi.com/?apikey=';
 const search = document.querySelector("#btn-search")
 const movieSearch = document.querySelector("#input-search")
 
-search.onclick = () => {
+search.onclick = (event) => {
+    event.preventDefault()
+
     const container = document.querySelector("#movies-container")
     container.innerHTML = ""
 
@@ -99,7 +101,9 @@ const close_login = document.querySelector("#close-login")
 close_login.onclick = () => document.querySelector("#login-modal").classList.remove('modal-show')
 
 const login_btn = document.querySelector("#login-btn")
-login_btn.onclick = () => {
+login_btn.onclick = (event) => {
+    event.preventDefault()
+
     user = {
         "username": document.querySelector("#username").value,
         "password": document.querySelector("#password").value,

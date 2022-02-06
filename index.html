@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OMDb</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -29,19 +29,22 @@
                 <input type="text" name="username" class="input" id="username">
                 <label for="password">Password</label>
                 <input type="password" name="password" class="input" id="password">
-                <button type="button" class="btn login__form-btn" id="login-btn">Login</button>
+                <button type="submit" class="btn login__form-btn" id="login-btn">Login</button>
             </form>
         </div>
     </header>
 
     <section class="search" id="search-section">
-        <div class="search-form" id="search-form">
-            <form class="search-container">
+        <form class="search-form" id="search-form">
+            <div class="search-form__input">
                 <label for="input-search" class="search__label">Search a Movie by the Title:</label>
                 <input type="text" class="input" id="input-search">
-            </form>
-            <button class="btn search__btn" id="btn-search" type="button">Search</button>
-        </div>
+            </div>
+            <div class="search-form__btn">
+                <button type="submit" class="btn search__btn" id="btn-search">Search</button>
+            </div>
+        </form>
+
     </section>
 
     <section class="movies-result">
